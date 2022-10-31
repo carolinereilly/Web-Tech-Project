@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href=".vscode/styles/index.css">
+    <title>Sitemap</title>
+    <link rel="stylesheet" href=".vscode/styles/contact.css">
     <style>
         *{
             box-sizing: border-box;
@@ -54,31 +54,7 @@
             float: right;
             margin-right: 5px;
         }
-        @media screen and (max-width: 500px) {
-            .header a {
-                float: none;
-                display: block;
-                text-align: center;
-            }
-            .header-center{
-                float: none;
-            }
-            .header-right{
-                float: none;
-            }
-            .logo{
-                text-align: right;
-            }
-            .box{
-                margin-left:auto;
-                margin-right:auto;
-                width: 400px;
-            }
-            img{
-                width:30%
-            }
-        }
-    
+        
     </style>
     <link rel="icon" type="image/x-icon" href="images/rhode-island-flag-1024x575.jpg">
 </head>
@@ -103,28 +79,57 @@
             />
         </div>
     </div>
-
-    <div class="box">
-        <h1>Welcome to The "All About Rhode Island" Website! Learn about the history, the beaches, the best restaurants to go to and more! </h1>
-                <img
-                src="images/rhodeislandmap.jpg"
-                alt="rhodeislandmap"
-                title="Rhode Island Map"
-                />
-            </div>
-        <br />
-
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <br />
-        </div>
-        <p>
-            Follow along as we dive into the Ocean State.
-        </p>
-    </div>
 </div>
-</body>
-</html>
+<div class="form">
+    <form
+    id="form"
+    action="https://oim-apis.herokuapp.com/form2"
+    method="post"
+    onsubmit="validateForm()"
+    >
+    <div>
+        <label for="firstname-input">First Name:</label>
+        <input
+        type="text"
+        id="firstname-input"
+        name="firstname"
+        placeholder="First Name"
+        />
+    </div>
+    <br />
+    <div>
+        <label for="lastname-input">Last Name:</label>
+        <input
+        type="text"
+        id="lastname-input"
+        name="lastname"
+        placeholder="Last Name"
+        />
+        <label for="email-input">Email:</label>
+        <input
+        type="text"
+        id="email-input"
+        name="email"
+        placeholder="Email Address"
+        />
+    </div>
+    <br />
+    <div>
+        <label for="comments">Leave A Comment:</label>
+    </div>
+    <div class="textbox">
+        <textarea
+        id="comments"
+        name="comments"
+        rows="5"
+        cols="25"
+        placeholder="Enter your comment here..."
+        ></textarea>
+    </div>
+    <br />
+    <div>
+        <button type="submit" value="sumit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </div>
+</form>
+</div>

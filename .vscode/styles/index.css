@@ -1,0 +1,25 @@
+.box{
+    background-color: white;
+    width: 1300px;
+    border: 20px solid navy;
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline darkblue;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+}
+p{
+    text-align: center;
+    color: navy;
+}
