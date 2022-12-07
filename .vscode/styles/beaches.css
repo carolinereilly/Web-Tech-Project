@@ -1,43 +1,137 @@
-table{
-    width: 50%;
-    table-layout: fixed;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: navy;
+}
+li{
+    float: left;
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: white;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+body{
+    background-color: lightblue;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+h1{
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    text-align: center;
+}
+h2{
+    font-family: Lucida Handwriting, cursive;
+    color: white;
+    text-align: center;
+}
+p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.2em;
+    text-indent: 30px;
+}
+.container{
+    background-color: lightcyan;
+    padding: 10px;
     margin-right: auto;
     margin-left: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: smaller;
+    display: grid;
+
+    grid-template-areas: 
+    "title-1 image-1 main-1 price-1 buy-1"
+    "title-1 image-1 main-1 price-1 buy-1"
+    "title-2 image-2 main-2 price-2 buy-2"
+    "title-2 image-2 main-3 price-3 buy-3";
+
+    column-gap: 0;
+    row-gap: 0;
 }
-table, tr{
-    border-collapse: collapse;
-}
-tr{
-    border: 10px solid lightgray;
-    vertical-align: center;
-}
-td{
-    border: 10x solid lightgray;
-    vertical-align: center;
-}
-.first_column{
-    width: 15%;
+.item{
+    border: 1px solid black;
+    background-color: white;
     text-align: center;
+    vertical-align: middle;
+    padding: 5px 20px
+}
+.item-1{
+    grid-area: title-1;
+    border: 1px solid black;
+    height: 350px;
+    line-height: 350px;
+}
+.item-2{
+    grid-area: title-2;
+    border: 1px solid black;
+    height: 350px;
+    line-height: 350px;
+}
+.item-3{
+    grid-area: image-1;
+    border: 1px solid black;
+    height: 350px;
+    line-height: 350px;
+}
+.item-4{
+    grid-area: image-2;
+    border: 1px solid black;
+    height: 350px;
+    line-height: 350px;
+}
+.header{
+    size: 30px;
     font-weight: bold;
-}
-.image_column{
-    width: 15%;
     text-align: center;
 }
-.third_column{
-    width: 30%;
+.website{
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    padding: 20px 40px;
+    margin: 30px;
+    text-decoration: none;
     text-align: center;
-    white-space: normal;
+    display: inline-block;
+    font-size: 12px;
 }
-.fourth_column{
-    width: 10%;
-    text-align: center;
+img.narragansett{
+    margin: 50px;
+    height: 200pt;
+    width: 300pt;
 }
-img{
-    display: block;
-    width: 30%;
-    margin-left:auto;
-    margin-right:auto;
+img.eastonbeach{
+    margin: 50px;
+    height: 200pt;
+    width: 300pt;
 }

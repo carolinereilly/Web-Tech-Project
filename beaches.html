@@ -6,92 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitemap</title>
     <link rel="stylesheet" href=".vscode/styles/beaches.css">
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .header{
-            overflow: hidden;
-            background-color: navy;
-            padding: 20px 10px;    
-        }
-        .header a {
-            float: left;
-            color: white;
-            text-align: center;
-            padding: 12px 40px 12px 40px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
-        }
-        .header a.rhodeisland{
-            font-size: 18px;
-            font-style: italic;
-        }
-        .header a:hover{
-            background-color: blue;
-            color: white;
-        }
-        .header a.active{
-            color: white;
-        }
-        .header-center{
-            float: center;
-            font-style: italic;
-        }
-        .header-right a {
-            float: right;
-            font-size: 18px;
-            font-style: italic;
-        }
-        .logo{
-            width: 50px;
-            float: right;
-            margin-right: 5px;
-        }
     </style>
 </head>
 <body>
+    <h1>Beaches of Rhode Island</h1>
+    <ul>
+        <li><a href="index.html">Home</a><li>
+        <li><a href="beaches.html">Beaches</a><li>
+        <li><a href="restaurants.html">Restaurants</a><li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+            </div>
+        </li>
+    </ul>
     <div class="header">
-        <a href="index.html" class="rhodeisland">All About Rhode Island</a>
-        <div class="header-center">
-            <a class="active" href="history.html">History of Rhode Island</a>
-            <a href="beaches.html">Beaches of Rhode Island</a>
-            <a href="restaurants.html">Restaurants of Rhode Island</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="header-right">
-            <a href="sitemap.html">Sitemap</a>
-        </div>
-        <div class="logo">
-            <img
-            class="logo"
-            src="images/rhode-island-flag-1024x575.jpg"
-            alt="rhodeislandlogo"
-            title="Rhode Island Flag"
-            />
-        </div>
+        <h2>Top Beaches of Rhode Island</h2>
     </div>
-        <table>
-            <caption>Top Two Beaches</caption>
-            <tr>
-                <td class="first_column">Narragansett Beach</td>
-                <td class="image_column"><img src="images/narragansettbeach.jpg"></td>
-                <td class="third_column">Narragansett, Rhode Island</td>
-                <td class="fourth_column"><a href="https://www.narragansettri.gov/323/Narragansett-Town-Beach">Website Link</a></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="first_column">Easton's Beach</td>
-                <td rowspan="2" class="image_column"><img src="images/eastonbeach.jpg"></td>
-                <td class="third_column">Newport, Rhode Island</td>
-                <td class="fourth_column"><a href="https://www.cityofnewport.com/en-us/visiting-newport/eastons-beach">Website Link</a></td>
-            </tr>
-        </table>
-       
-    </body>
-    </html>
+    <div class="container wrap">
+        <div class="item item-1">Narragansett Beach</div>
+        <div class="item item-2">Easton Beach</div>
+
+        <div class="item item-3">
+            <img class="narragansett" src="images/narragansettbeach.jpg"/>
+        </div>
+        <div class="item item-4">
+            <img class="eastonbeach" src="images/eastonbeach.jpg">
+        </div>
+        </div>
+
+</body>
+</html>
