@@ -6,31 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitemap</title>
     <link rel="stylesheet" href=".vscode/styles/sitemap.css">
-    <style>
-        ul ul {
-            list-style-image: url(images/smiley.gif);
-        }
-        hr{
-            background-color:white;
-        }
-    </style>
-    </style>
 </head>
 <body>
-    <h1>My Sitemap</h1>
-    <hr>
+    <h1>Sitemap</h1>
     <ul>
-            <h2>All the pages on this website:</h2>
-            <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="beaches.html">Beaches</a></li>
-                        <li><a href="restaurants.html">Restaurants</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="sitemap.html">Sitemap</a></li>
-            </ul>
-    </ul>
-    <hr>
+        <li><a href="index.html">Home</a><li>
+        <li><a href="beaches.html">Beaches</a><li>
+        <li><a href="restaurants.html">Restaurants</a><li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+    </div>
+</li>
+</ul>
+<h2>Thank you for following along on my website!</h2>
+<img
+    class="pic1"
+    id="images"
+    src="images/statehouse-sunset-copy-1280x720.png"
+    onmouseover="mouseOver()"
+    onmouseout="mouseOut()"
+    alt="pic1"
+    title="Rhode Island Statehouse"
+    />
+    <br />
+    <div>
+        <a class="sitelinks" href="index.html">Home</a>
+        <a class="sitelinks" href="beaches.html">Beaches</a>
+        <a class="sitelinks" href="restaurants.html">Restaurants</a>
+        <a class="sitelinks" href="history.html">History</a>
+        <a class="sitelinks" href="contact.html">Contact</a>
+    </div>
 </body>
+<script>
+function mouseOver(){
+                document.getElementById("images").src = "images/statehouse-sunset-copy-1280x720.png";
+            }
+            function mouseOut(){
+                document.getElementById("images").src = "images/eastgreenwich.jpg";
+            }
+</script>
 </html>
+
  

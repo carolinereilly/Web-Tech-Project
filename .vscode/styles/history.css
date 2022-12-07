@@ -66,12 +66,13 @@ li.dropdown{
 #history1{
     float:left;
     width:250px;
-    margin-left: 150px;
+    margin-right: 120px;
 }
 #history2{
     float: right;
     width: 250px;
-    margin-right: 150px;
+    height: 170px;
+    margin-left: 120px;
 }
 #spin{
     perspective: 1000px;

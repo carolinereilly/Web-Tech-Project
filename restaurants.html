@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemap</title>
-    <link rel="stylesheet" href=".vscode/styles/restaurants.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants</title>
+    <link rel="stylesheet" href=".vscode/styles/restaurants.css" />
+  </head>
+  <body>
     <h1>Restaurants of Rhode Island</h1>
     <ul>
-        <li><a href="index.html">Home</a><li>
-        <li><a href="beaches.html">Beaches</a><li>
-        <li><a href="restaurants.html">Restaurants</a><li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-            </div>
-        </li>
+      <li><a href="index.html">Home</a></li>
+      <li></li>
+      <li><a href="beaches.html">Beaches</a></li>
+      <li></li>
+      <li><a href="restaurants.html">Restaurants</a></li>
+      <li></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sitemap.html">Sitemap</a></li>
     </ul>
-             <h2>Enjoy a video talking about the top restaurants in Providence, Rhode Island!</h2>
-            <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/MZEw5AByU3c"
-            title="Too 10 Providence Restaurants"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-white; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-                >
-            </iframe>
-            <p>
-            </p>
-            </div>
+    <h2>
+      Enjoy a video talking about the top restaurants in Providence, Rhode
+      Island!
+    </h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/MZEw5AByU3c"
+      title="Too 10 Providence Restaurants"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-white; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+    <div id="box">
+      <h2>My first favorite restaurant in Rhode Island!</h2>
+      <caption>
+        <h3>
+          <button id="button" onclick="hideDiego(), showConstantino()">
+            Click to view Restaurant #2!
+          </button>
+        </h3>
+      </caption>
+      <p>
+        My first favorite restaurant is Diego's in Newport, Rhode Island. It has
+        Mexican food with very yummy drinks!
+      </p>
+      <img class="diego" src="images/diegos.jpg" alt="diegos" title="Diego's" />
+    </div>
+
+    <div id="box1">
+      <h2>Here is my second favorite restaurant!</h2>
+      <caption>
+        <h3>
+          <button id="button" onclick="hideConstantino(), showDiego()">
+            Click to view Restaurant #1 again!
+          </button>
+        </h3>
+      </caption>
+      <p>
+        My second favorite restaurant is Constantino's in Providence, Rhode
+        Island. It has Italian food and live music!
+      </p>
+      <img
+        class="constantino"
+        src="images/constantino.jpg"
+        alt="constantino"
+        title="Constantino's"
+      />
+    </div>
+
+    <script>
+      let btn = document.getElementById("button");
+      let diego = document.getElementById("box");
+      let constantino = document.getElementById("box1");
+
+      function hideDiego() {
+        diego.style.display = "none";
+      }
+      function showConstantino() {
+        constantino.style.display = "block";
+      }
+      function hideConstantino() {
+        constantino.style.display = "none";
+      }
+      function showDiego() {
+        diego.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

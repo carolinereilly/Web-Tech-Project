@@ -27,92 +27,96 @@
         </ul>
         <br />
         <h2>Feedback on the All About Rhode Island Website!</h2>
-        <form action="https//oim-apis.herokuapp.com/form" method="post">
-            <fieldset>
-               <caroline>Your Information:</caroline> 
-               <div>
-                <label for = "name-input">Name:</label>
+        <div class="form">
+            <form
+            id="form"
+            action="https//oim-apis.herokuapp.com/form"
+            method="post"
+            onsubmit="validateForm()"
+            >
+            <div>
+                <label for = "firstname-input">First Name:</label>
                 <input
                 type="text"
-                name="name"
-                id="name-input"
-                placeholder="Enter your name here"/>
+                name="firstname"
+                id="firstname-input"
+                placeholder="Enter your first name here"
+                />
                </div>
-               <br>
+               <br />
                <div>
+                <label for="lastname-input">Last Name:</label>
+                <input
+                type="text"
+                id="lastname-input"
+                name="lastname"
+                placeholder="Enter your last name here"
+                />
+               </div>
+               <br />
                 <label for="email-input">Email:</label>
                 <input
                 type="text"
                 id="email-input"
                 name="email"
-                placeholder="Enter your email here"/>
+                placeholder="Enter your email here"
+                />
                </div>
-               <br>
+               <br />
                <div>
-                <div>
-                    <label for="country-choices">Country</label>
-                    <select name="country" id="country-choice">
-                        <option value="">---Country---</option>
-                        <option value="USA">USA</option>
-                        <option value="Canada">Canada</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="Australia">Australia</option>
-                    </select>
-                </div>
-               </div>
-            </fieldset>
-            <fieldset>
-                    </select>
-                </div>
-                <br>
-                <div>What did you think of this website?</div>
-                <div>
-                    <input type="radio" id="great" name="great-review" value="great"/>
-                    <label for="great">Great</label>
-                    <input type="radio" id="awesome" name="awesome-review" value="awesome"/>
-                    <label for="awesome">Awesome</label>
-                    <input type="radio" id="good" name="good-review" value="good"/>
-                    <label for="good">Good</label>
-                </div>
-                <br>
-                <div>
-                    <label for="comments">Comments:</label>
-                </div>
+                <label for="comments">Leave your thoughts and comments here!</label>
+            </div>
                 <div class="textbox">
                     <textarea
                     id="comments"
                     name="comments"
                     rows="5"
                     cols="25"
-                    placeholder="Enter your comment here...">
-                    </textarea>
+                    placeholder="Enter your comment here..."
+                    ></textarea>
                 </div>
-                <br>
+                <br />
                 <div>
-                    <input type="checkbox" id="email-updates" name="email-updates" value="email-updates" checked/>
-                    <label for="email-updates">Sign me up for email updates to learn more!</label>
+                    <button type="submit" value="Submit">Submit</button>
+                    <button type="reset" value="Reset">Reset</button>
                 </div>
-                <div>
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                    </div>
-            </fieldset>
             </form>
         </div>
+    </div>
+    <img
+    class="page1"
+    id="images"
+    src="images/rhode-island-flag-1024x575.jpg"
+    onmouseover="mouseOver()"
+    onmouseout="mouseOut()"
+    alt="page1"
+    title="Map of Rhode Island"
+    />
+
     <script>
         function validateForm(){
             let myForm = document.getElementById("form");
             let first = myForm.firstname.value;
+            let last = myForm.lastname.value;
             let email = myForm.email.value;
             let comments = myForm.comments.value;
 
             if (first == "") {
-                alert("Please enter first name");
+                alert("Please enter first name.");
+            }else if (last == "") {
+                alert("Please enter last name.");
             }else if (email == "") {
-                alert("Please enter an email address");
+                alert("Please enter an email address.");
             }else if (comments == "") {
-                alert("Please leave a comment");
+                alert("Please leave a comment.");
             }
+            }
+
+            function mouseOver(){
+                document.getElementById("images").src = "images/rhode-island-flag-1024x575.jpg";
+            }
+            function mouseOut(){
+                document.getElementById("images").src = "images/castle-hill-lighthouse-newport-ri-goxplr.jpg";
             }
     </script>
     </body>

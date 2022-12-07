@@ -27,8 +27,6 @@ h2{
 }
 
 p{
-    font-family: sans-serif;
-    color: white;
     font-size: 1.2em;
     text-indent: 30px;
 }
@@ -79,4 +77,29 @@ li.dropdown{
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+img.diego{
+        margin-left: auto;
+        margin-right: auto;
+        height: 150pt;
+        display: block;
+        width: 200pt;
+}
+img.constantino{
+    margin-left: auto;
+        margin-right: auto;
+        height: 150pt;
+        display: block;
+        width: 200pt;
+}
+#box {
+    display: block;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#box1 {
+    display: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

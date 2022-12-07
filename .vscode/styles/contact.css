@@ -63,3 +63,18 @@ p{
     font-size: 1.2em;
     text-indent: 30px;
 }
+.form{
+    display: flex;
+}
+.page1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+#flip{
+    perspective: 1000px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
